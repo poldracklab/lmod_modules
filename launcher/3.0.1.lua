@@ -14,6 +14,9 @@ https://www.tacc.utexas.edu/research-development/tacc-software/the-launcher.
 whatis("Name: Launcher")
 whatis("Version: 3.0.1")
 
+always_unload("crnenv")
+load("python")
+
 -- Load module dependencies
 local software_path = '/work/03843/crn_plab/software'
 
