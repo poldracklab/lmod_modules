@@ -26,3 +26,5 @@ setenv( "LAUNCHER_PLUGIN_DIR",         plugin_dir)
 setenv( "LAUNCHER_RMI",                "SLURM")
 setenv( "LAUNCHER_SBATCH_TPL",         pathJoin(bar_dir, "extras/batch-scripts/launcher.slurm"))
 
+-- Specific binding for KNL
+setenv( "LAUNCHER_BIND",               1)
