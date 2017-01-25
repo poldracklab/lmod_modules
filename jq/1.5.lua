@@ -12,7 +12,7 @@ whatis("Keywords: json")
 whatis("Description: jq")
 whatis("URL: ")
 
-local software_path = '/work/03843/crn_plab/software'
+local software_path = '/work/01329/poldrack/software'
 local jq_path = pathJoin(software_path, 'jq-1.5')
 prepend_path('PATH', pathJoin(jq_path, 'bin'));
 prepend_path('LD_LIBRARY_PATH', pathJoin(jq_path, 'lib'));

@@ -18,7 +18,7 @@ always_unload("crnenv")
 load("python")
 
 -- Load module dependencies
-local software_path = '/work/03843/crn_plab/software'
+local software_path = '/work/01329/poldrack/software'
 
 -- Create environment variables.
 local bar_dir           = pathJoin(software_path, "launcher-3.0.1");

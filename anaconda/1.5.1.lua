@@ -17,7 +17,8 @@ whatis("URL: ")
 always_unload("python")
 
 -- Anaconda path
-local anaconda_path = '/work/03843/crn_plab/anaconda'
+local software_path = '/work/01329/poldrack/software'
+local anaconda_path = pathJoin(software_path, 'anaconda')
 
 -- Start miniconda
 prepend_path('PATH', pathJoin(anaconda_path, 'bin'));

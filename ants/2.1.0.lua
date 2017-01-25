@@ -13,7 +13,7 @@ whatis("Description: ANTs")
 whatis("URL: ")
 
 -- Set-up paths
-local software_path = '/work/03843/crn_plab/software'
+local software_path = '/work/01329/poldrack/software'
 local ants_path = pathJoin(software_path, 'ants-2.1.0')
 
 -- Set-up environment variables

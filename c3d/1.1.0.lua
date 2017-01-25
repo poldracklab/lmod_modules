@@ -12,6 +12,6 @@ whatis("Keywords:  Biology, fMRI, Reconstruction")
 whatis("Description: C3D")
 whatis("URL: ")
 
-local software_path = '/work/03843/crn_plab/software'
+local software_path = '/work/01329/poldrack/software'
 local c3d_path = pathJoin(software_path, 'c3d-1.1.0')
 prepend_path('PATH', pathJoin(c3d_path, 'bin'));

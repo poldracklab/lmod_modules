@@ -16,7 +16,7 @@ whatis("URL: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki")
 
 
 -- Set-up paths
-local software_path = '/work/03843/crn_plab/software'
+local software_path = '/work/01329/poldrack/software'
 local fsl_dir = pathJoin(software_path, 'fsl-5.0.9')
 
 -- Set-up software paths

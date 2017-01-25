@@ -14,7 +14,7 @@ whatis("Description: freesurfer - a set of tools for analysis and visualization 
 whatis("URL: http://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferWiki")
 
 -- Set-up paths
-local software_path = '/work/03843/crn_plab/software'
+local software_path = '/work/01329/poldrack/software'
 local fs_dir = pathJoin(software_path, 'freesurfer-5.3.0')
 
 -- Set-up module's variables
