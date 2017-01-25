@@ -1,14 +1,12 @@
 -- Load module dependencies
-always_unload("python")
 load("afni")
 load("ants")
 load("fsl")
 load("freesurfer")
-setenv('CRNENV_WORK', '/work/03843/crn_plab')
+load("anaconda")
 
--- Start miniconda
-prepend_path('PATH', pathJoin(os.getenv('CRNENV_WORK'), 'anaconda/bin'));
-setenv('PYTHONPATH', pathJoin(os.getenv('CRNENV_WORK'), 'anaconda/lib/python2.7/site-packages'));
+
+setenv('CRNENV_WORK', '/work/03843/crn_plab')
 
 -- Initialize variable names
 setenv('CRNENV_EXECUTION_SYSTEM', 'stampede.tacc.utexas.edu');
