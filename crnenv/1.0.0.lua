@@ -1,6 +1,7 @@
 -- Load module dependencies
 load("afni")
 load("ants")
+load("c3d")
 load("fsl")
 load("freesurfer")
 load("anaconda")
