@@ -7,7 +7,7 @@ load("freesurfer")
 load("anaconda")
 
 -- Initialize variable names
-local ncpus = capture("grep -c '^processor' /proc/cpuinfo")
+local ncpus = capture("grep -c '^processor' /proc/cpuinfo"):gsub(nas,'\\',"")
 local hostname = capture("/bin/hostname -d")
 
 if string.match(hostname, "stanford.edu") then
