@@ -30,4 +30,7 @@ setenv( "LAUNCHER_RMI",                "SLURM")
 setenv( "LAUNCHER_SBATCH_TPL",         pathJoin(bar_dir, "extras/batch-scripts/launcher.slurm"))
 
 -- Specific binding for KNL
-setenv( "LAUNCHER_BIND",               1)
+local hostname = capture("/bin/hostname -d")
+if string.match(hostname, "knl") then
+	setenv("LAUNCHER_BIND", 1)
+end
