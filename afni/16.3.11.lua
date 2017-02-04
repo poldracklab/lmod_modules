@@ -20,3 +20,6 @@ local afni_path = pathJoin(software_path, 'afni-16.3.11')
 load('gsl')
 append_path('PATH', afni_path);
 
+-- Fix missing libgsl.so.0 by linking /opt/apps/intel16/gsl/2.2.1/lib/libgsl.so
+-- as libgsl.so.0 in afni/lib folder.
+append_path('LD_LIBRARY_PATH', pathJoin(afni_path, 'lib'))
