@@ -32,6 +32,7 @@ local software_path = '/work/01329/poldrack/software'
 local bar_dir           = pathJoin(software_path, "launcher-3.1.0");
 local plugin_dir        = pathJoin(bar_dir, "plugins");
 
+setenv( "LAUNCHER_VERSION",            "3.1.0")
 setenv( "LAUNCHER_DIR",                bar_dir)
 setenv( "LAUNCHER_PLUGIN_DIR",         plugin_dir)
 setenv( "LAUNCHER_RMI",                "SLURM")
