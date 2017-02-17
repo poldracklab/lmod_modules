@@ -45,5 +45,5 @@ end
 
 -- Use -d (cray-specific) in nc command only in LS5
 if string.match(os.getenv("TACC_SYSTEM"), "ls5") then
-	setenv("LAUNCHER_NETCAT_FLAG", "-d")
+	setenv("LAUNCHER_NETCAT_FLAGS", "-d")
 end
