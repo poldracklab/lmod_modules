@@ -18,6 +18,10 @@ local afni_path = pathJoin(software_path, 'afni-16.3.11')
 
 -- Load module dependencies
 load('gsl')
+load('intel') 
+-- module intel fixes "error while loading shared libraries:"
+-- "libimf.so: cannot open shared object file: No such file or directory"
+
 append_path('PATH', afni_path);
 
 -- Fix missing libgsl.so.0 by linking /opt/apps/intel16/gsl/2.2.1/lib/libgsl.so
