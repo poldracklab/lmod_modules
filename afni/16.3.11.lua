@@ -23,6 +23,7 @@ load('intel')
 -- "libimf.so: cannot open shared object file: No such file or directory"
 
 append_path('PATH', afni_path);
+append_path('LD_LIBRARY_PATH', pathJoin(afni_path, 'lib'))
 
 -- Fix missing libgsl.so.0 by linking /opt/apps/intel16/gsl/2.2.1/lib/libgsl.so
 -- as libgsl.so.0 in afni/lib folder.
