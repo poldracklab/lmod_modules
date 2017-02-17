@@ -17,12 +17,12 @@ whatis("Version: 3.1.0")
 -- Check Python version: launcher requires >=2.7
 local pyversion = capture("python --version")
 if string.match(pyversion, "command not found") then
-	load("python")
+    load("python")
 else
-	_, _, v1, v2, _ = strfind( pyversion, "(%d+)%.(%d+)%.(%d+)" )
-	if v1 < 2 or (v1 == 2 and v2 < 7) then
-		load("python")
-	end
+    _, _, v1, v2, _ = strfind( pyversion, "(%d+)%.(%d+)%.(%d+)" )
+    if v1 < 2 or (v1 == 2 and v2 < 7) then
+        load("python")
+    end
 end
 
 -- Load module dependencies
@@ -40,10 +40,10 @@ setenv( "LAUNCHER_SBATCH_TPL",         pathJoin(bar_dir, "extras/batch-scripts/l
 
 -- Specific binding for KNL
 if string.match(os.getenv("TACC_SYSTEM"), "knl") then
-	setenv("LAUNCHER_BIND", 1)
+    setenv("LAUNCHER_BIND", 1)
 end
 
 -- Use -d (cray-specific) in nc command only in LS5
 if string.match(os.getenv("TACC_SYSTEM"), "ls5") then
-	setenv("LAUNCHER_NETCAT_FLAGS", "-d")
+    setenv("LAUNCHER_NETCAT_FLAGS", "-d")
 end
