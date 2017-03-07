@@ -21,6 +21,7 @@ local fsl_dir = pathJoin(software_path, 'fsl-5.0.9')
 
 -- Set-up software paths
 setenv('FSLDIR', fsl_dir)
+setenv('FSL_DIR', fsl_dir)
 setenv('FSLMULTIFILEQUIT', 'TRUE')
 setenv('FSLGECUDAQ', 'cuda.q')
 setenv('FSLTCLSH', pathJoin(fsl_dir, 'bin/fsltclsh'))
