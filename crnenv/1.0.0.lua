@@ -4,6 +4,7 @@ load("ants")
 load("c3d")
 load("fsl")
 load("freesurfer")
+load("nodejs")
 load("anaconda")
 
 -- Initialize variable names
@@ -29,3 +30,6 @@ end
 
 setenv('CRNENV_EXECUTION_SYSTEM', hostname);
 setenv('CRNENV_SYSTEM_NCPUS', ncpus);
+
+-- Enable cwebp compression for reports
+append_path('PATH', '/work/01329/poldrack/software/libwebp-0.5.2/bin');
