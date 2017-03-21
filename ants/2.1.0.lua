@@ -17,6 +17,7 @@ local software_path = '/work/01329/poldrack/software'
 local ants_path = pathJoin(software_path, 'ants-2.1.0')
 
 -- Set-up environment variables
+setenv('ANTSPATH', pathJoin(ants_path, 'bin'))
 prepend_path('PATH', pathJoin(ants_path, 'scripts'));
 prepend_path('PATH', pathJoin(ants_path, 'bin'));
 prepend_path('LD_LIBRARY_PATH', pathJoin(ants_path, 'lib'));
