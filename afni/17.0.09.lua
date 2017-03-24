@@ -17,7 +17,6 @@ local software_path = '/work/01329/poldrack/software'
 local afni_path = pathJoin(software_path, 'afni-17.0.09')
 
 -- Load module dependencies
-load('intel') 
 load('gsl')
 -- module intel fixes "error while loading shared libraries:"
 -- "libimf.so: cannot open shared object file: No such file or directory"
